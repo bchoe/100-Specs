@@ -31,7 +31,7 @@ let sahara_animal = 'The Addax';
  * Capitalize the names.
  */
 
- let planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune', 'Pluto'];
+ let planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'];
 
 
 /* Step 5
@@ -42,6 +42,7 @@ let sahara_animal = 'The Addax';
  *
  */
 
+let galilean_moons = ['Io','Europa','Ganymede','Callisto'];
 
 /* Step 6 φ
  *
