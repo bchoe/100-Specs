@@ -31,6 +31,8 @@ let sahara_animal = 'The Addax';
  * Capitalize the names.
  */
 
+ let planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune', 'Pluto'];
+
 
 /* Step 5
  *
