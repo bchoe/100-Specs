@@ -180,7 +180,7 @@ let rainbow = {
   isDouble: true
 
 };
-//come back later
+
 
 /* Step 14
  *
@@ -315,6 +315,9 @@ function sahara_river(){
  *
  */
 
+function addNumbers(x,y){
+  return x + y;
+}
 
 /* Step 22
  *
@@ -328,6 +331,13 @@ function sahara_river(){
  *
  */
 
+function installLinux(Linux){
+  if (linuxFlavors.indexOf(Linux)> -1){
+    return true;
+  } else {
+    return false;
+  }
+}
 
 /* Step 23
  *
