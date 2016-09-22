@@ -282,7 +282,7 @@ let scmList = ['git','svn','mercurial','bazaar','cvs'];
  *
  */
 
-let beers ={
+let beers = {
   IPA: 'Ale',
   Lager: 'Strong',
   Heffeweisen: 'German',
@@ -332,7 +332,8 @@ function addNumbers(x,y){
  */
 
 function installLinux(Linux){
-  if (linuxFlavors.indexOf(Linux)> -1){
+  if (linuxFlavors.indexOf(Linux) > -1){
+//console.log(Linux);
     return true;
   } else {
     return false;
@@ -357,6 +358,18 @@ function installLinux(Linux){
  *
  */
 
+function drink(beer){
+  if(beers.hasOwnProperty(beer)){
+    if (typeof beers[beer] === 'string'){
+      return 'This ' + beer  + ' is ' + beers[beer] + '.';
+    }
+    if(typeof beers[beer] === 'object'){
+      return 'This ' + beer  + ' is ' + beers[beer][0] + ' and ' + beers[beer][1] + '.';
+    }
+  } else {
+    return false;
+  }
+}
 
 /* Step 24
  *
@@ -370,6 +383,9 @@ function installLinux(Linux){
  *
  */
 
+function browseURL(){
+
+}
 
 /* Step 25
  *
