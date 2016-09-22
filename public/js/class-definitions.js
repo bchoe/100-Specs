@@ -167,6 +167,17 @@ let browsers = {
  *
  */
 
+let rainbow = {
+  red: "#F0280A",
+  orange: "#FF8800L",
+  yellow: "#FFDD00",
+  green: "#51AB0C",
+  blue: "#1593ED",
+  indigo: "#A915ED",
+  violet: "#A915ED"
+
+};
+//come back later
 
 /* Step 14
  *
@@ -182,6 +193,7 @@ let browsers = {
  *
  */
 
+let linuxFlavors = ['Gentoo', 'Fedora', 'Debian', 'Slackware', 'Red Hat', 'Bieber Linux'];
 
 /* Step 15
  *
