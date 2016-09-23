@@ -1131,7 +1131,8 @@ var square = new Shape(4);
 var hexagon = new Shape(6);
 
 // Create 2 boxes
-var catBox;
+let cat = new Animal ('Cat', 'both');
+var catBox = new Box(cat, true);
 var christmasPresent;
 
 // Create 2 doors
