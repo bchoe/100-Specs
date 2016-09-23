@@ -445,8 +445,6 @@ function favoritePlanet(currPlanet){
   }
 
 }
-
-
 /* Step 27
  *
  * Define a class named "Person" that has properties for
@@ -497,6 +495,14 @@ Person.prototype.earnMoney = function(bustedAss){
  * @return {String}
  *
  */
+
+function purchaseLaptop(laptop){
+  if(laptopCosts.hasOwnProperty(laptop)){
+    return laptopCosts[laptop].toString();
+  } else {
+    return -1;
+  }
+}
 
 
 /* Step 29
