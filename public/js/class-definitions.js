@@ -1136,7 +1136,7 @@ var catBox = new Box(cat, true);
 var christmasPresent = new Box('gifts', false);
 
 // Create 2 doors
-var automaticDoor;
+var automaticDoor = new Door(true);
 var bankVault;
 
 // Create 2 shoes
