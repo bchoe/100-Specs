@@ -363,7 +363,7 @@ function drink(beer){
     if (typeof beers[beer] === 'string'){
       return 'This ' + beer  + ' is ' + beers[beer] + '.';
     }
-    if(typeof beers[beer] === 'object'){
+    if (typeof beers[beer] === 'object'){
       return 'This ' + beer  + ' is ' + beers[beer][0] + ' and ' + beers[beer][1] + '.';
     }
   } else {
@@ -383,9 +383,36 @@ function drink(beer){
  *
  */
 
-function browseURL(){
+let browseURL = function (browser) {
+ if(browser in browsers){
+  return browsers[browser];
+ } else {
+  return false;
+ }
+};
+/*  switch (browsers) {
+    case Chromium:
+        day = "google.com";
+        return browsers.Chromium;
+    case Safari:
+        day = "apple.com";
+        break;
+    case Opera:
+        day = "opera.com";
+        break;
+    case Firefox:
+        day = "mozilla.com";
+        break;
+    case Sleipnir:
+        day = "fenrir-inc.com";
+        break;
+    case Konqueror:
+        day = "konqueror.org";
+        break;
+      default:
+        return false;*/
 
-}
+
 
 /* Step 25
  *
