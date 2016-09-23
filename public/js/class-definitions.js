@@ -517,6 +517,13 @@ function purchaseLaptop(laptop){
  *
  */
 
+function canTalkAbout(club){
+  if(club_name === club){
+    return false;
+  } else {
+    return true;
+  }
+}
 
 /* Step 30
  *
@@ -538,6 +545,14 @@ function purchaseLaptop(laptop){
  *   write
  *
  */
+
+function Pen(color){
+  this.color = color;
+}
+
+Pen.prototype.write = function(message){
+  return this.color + ': ' + message;
+};
 
 
 /* Step 31
