@@ -333,7 +333,6 @@ function addNumbers(x,y){
 
 function installLinux(Linux){
   if (linuxFlavors.indexOf(Linux) > -1){
-//console.log(Linux);
     return true;
   } else {
     return false;
@@ -390,29 +389,6 @@ let browseURL = function (browser) {
   return false;
  }
 };
-/*  switch (browsers) {
-    case Chromium:
-        day = "google.com";
-        return browsers.Chromium;
-    case Safari:
-        day = "apple.com";
-        break;
-    case Opera:
-        day = "opera.com";
-        break;
-    case Firefox:
-        day = "mozilla.com";
-        break;
-    case Sleipnir:
-        day = "fenrir-inc.com";
-        break;
-    case Konqueror:
-        day = "konqueror.org";
-        break;
-      default:
-        return false;*/
-
-
 
 /* Step 25
  *
@@ -423,6 +399,18 @@ let browseURL = function (browser) {
  * @return {String}
  *
  */
+
+function listLivingOrgClass(){
+  let unorderedList = document.createElement('ul');
+    for (var i = 0; i < livingOrganismClassification.length; i++ ){
+       let orderedList = document.createElement('li');
+       console.log(orderedList);
+       let orgText = document.createTextNode(livingOrganismClassification[i]);
+       orderedList.appendChild(orgText);
+       unorderedList.appendChild(orderedList);
+    }
+    return unorderedList.outerHTML;
+}
 
 
 /* Step 26
@@ -444,6 +432,7 @@ let browseURL = function (browser) {
  * @return {String}
  *
  */
+
 
 
 /* Step 27
