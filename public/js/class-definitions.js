@@ -404,7 +404,6 @@ function listLivingOrgClass(){
   let unorderedList = document.createElement('ul');
     for (var i = 0; i < livingOrganismClassification.length; i++ ){
        let orderedList = document.createElement('li');
-       console.log(orderedList);
        let orgText = document.createTextNode(livingOrganismClassification[i]);
        orderedList.appendChild(orgText);
        unorderedList.appendChild(orderedList);
@@ -433,6 +432,12 @@ function listLivingOrgClass(){
  *
  */
 
+function favoritePlanet(currPlanet){
+  if(planets.indexOf(currPlanet) > - 1){
+    //console.log(currPlanet);
+
+  }
+}
 
 
 /* Step 27
@@ -457,6 +462,21 @@ function listLivingOrgClass(){
  *   earnMoney
  *
  */
+
+function Person(name, money, age, gender){
+  this.name = name;
+  this.money = money;
+  this.age = age;
+  this.gender = gender;
+}
+
+Person.prototype.spendMoney = function(spent){
+  return this.money -= spent;
+};
+
+Person.prototype.earnMoney = function(bustedAss){
+  return this.money += bustedAss;
+};
 
 
 /* Step 28
