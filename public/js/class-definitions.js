@@ -1200,7 +1200,7 @@ var dinner = new Meal('fish and vegetables');
  */
 
 Vehicle.prototype.drive = function(streetName){
-  if(typeof streetName !== 'string'|| streetName === ''){
+  if(typeof streetName !== 'string' || streetName === ''){
     return 'Driving forward';
   } else {
     return 'Driving on ' + streetName;
@@ -1224,7 +1224,36 @@ Vehicle.prototype.drive = function(streetName){
  * Any other number => "Could not determine type"
  *
  */
-
+Shape.prototype.getType = function(){
+  switch (this.sides) {
+    case 3:
+        return 'triangle';
+        break;
+    case 4:
+        return  "quadrilateral";
+        break;
+    case 5:
+        return  "pentagon";
+        break;
+    case 6:
+        return "hexagon";
+        break;
+    case 7:
+        return "heptagon";
+        break;
+    case 8:
+        return "octagon";
+        break;
+    case 9:
+        return "nonagon";
+        break;
+    case 10:
+        return "decagon";
+        break;
+    default:
+        return 'Could not determine type';
+  }
+};
 
 /* Step 84
  *
