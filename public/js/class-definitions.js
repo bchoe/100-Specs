@@ -622,11 +622,11 @@ function SolarSystem(planets){
 
 SolarSystem.prototype.addPlanet = function(planet){
   this.planets.push(planet);
-}
+};
 
 SolarSystem.prototype.removePlanet = function(planet){
   this.planets.pop(planet);
-}
+};
 
 /* Step 33
  *
@@ -684,7 +684,7 @@ PrincessLeia.prototype.marries = function (lover){
   if(lover === 'Han Solo'){
     return true;
   }else{
-    if( lover === 'Luke Skywalker'){
+    if(lover === 'Luke Skywalker'){
       return 'Gross!';
     }
     return false;
@@ -1118,7 +1118,8 @@ function Meal(foods){
 
 
 // Create 2 different species of animals
-var george;
+var george = new Animal('Monkey', 'male');
+
 var nemo;
 
 // Create 2 different vehicles
