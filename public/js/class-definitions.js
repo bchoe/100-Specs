@@ -433,10 +433,17 @@ function listLivingOrgClass(){
  */
 
 function favoritePlanet(currPlanet){
-  if(planets.indexOf(currPlanet) > - 1){
+  if(planets.indexOf(currPlanet) > -1){
     //console.log(currPlanet);
-
+    let min = Math.floor((planets.length -1));
+    //console.log(planets);
+    let max = Math.ceil(0);
+    let randomPlanet = Math.floor(Math.random()) * (max - min) + min;
+    return 'I\'m from ' + currPlanet + ', but I wish I could go to ' + planets[randomPlanet];
+  } else {
+    return currPlanet + ' is not a planet!';
   }
+
 }
 
 
