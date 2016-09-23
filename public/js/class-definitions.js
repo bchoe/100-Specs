@@ -662,7 +662,7 @@ SolarSystem.prototype.removePlanet = function(planet){
  */
 
 PrincessLeia.prototype = Object.create(Person.prototype, {
-  constructor: PrincessLeia
+  constructor: Person
  });
 
 function PrincessLeia (name, money, age, gender){
@@ -761,6 +761,42 @@ Stapler.prototype.staplePapers = function(num){
  *   addDiscovery
  *
  */
+
+Scientist.prototype = Object.create(Person.prototype,{
+  constructor: Person
+});
+
+function Scientist (name, money, age, gender){
+  Person.call(this, name, money, age, gender);
+  this.disciplines = [];
+  this.discoveries = [];
+}
+
+Scientist.prototype.addDiscipline = function(string){
+  this.disciplines.push(string);
+  return this.disciplines;
+};
+
+Scientist.prototype.checkDiscipline = function(string){
+  if(this.disciplines.indexOf(string) >= 0){
+    return true;
+  } else {
+    return false;
+  }
+};
+
+Scientist.prototype.addDiscovery = function(string){
+  this.discoveries.push(string);
+  if(this.discoveries.indexOf(string) === 0){
+    return 'I discovered ' + this.discoveries + '.';
+  }
+  if(this.discoveries.indexOf(string) === 1){
+    return 'I discovered ' + this.discoveries[0]  + ' and ' + this.discoveries[1] + '.';
+  }
+  if(this.discoveries.indexOf(string) === 2){
+    return 'I discovered ' + this.discoveries[0]  + ', ' + this.discoveries[1] + ', and ' + this.discoveries[2] + '.';
+  }
+};
 
 
 /* Step 36
