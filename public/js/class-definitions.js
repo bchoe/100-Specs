@@ -1133,7 +1133,7 @@ var hexagon = new Shape(6);
 // Create 2 boxes
 let cat = new Animal ('Cat', 'both');
 var catBox = new Box(cat, true);
-var christmasPresent;
+var christmasPresent = new Box('gifts', false);
 
 // Create 2 doors
 var automaticDoor;
