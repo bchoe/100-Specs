@@ -1189,7 +1189,6 @@ var dinner = new Meal('fish and vegetables');
   } else {
     return "Could not determine if warm-blooded";
   }
-
  };
 
 /* Step 82
@@ -1200,6 +1199,13 @@ var dinner = new Meal('fish and vegetables');
  *
  */
 
+Vehicle.prototype.drive = function(streetName){
+  if(typeof streetName !== 'string'|| streetName === ''){
+    return 'Driving forward';
+  } else {
+    return 'Driving on ' + streetName;
+  }
+};
 
  /* Step 83
  *
