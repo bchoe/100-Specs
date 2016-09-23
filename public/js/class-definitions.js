@@ -661,6 +661,36 @@ SolarSystem.prototype.removePlanet = function(planet){
  *
  */
 
+PrincessLeia.prototype = Object.create(Person.prototype, {
+  constructor: PrincessLeia
+ });
+
+function PrincessLeia (name, money, age, gender){
+  Person.call(this, name, money, age, gender);
+  this.isInTrouble = null;
+}
+
+PrincessLeia.prototype.shootsGun = function(){
+  this.isInTrouble = false;
+  return 'Leia shoots her gun wildly';
+};
+
+PrincessLeia.prototype.getsInTrouble = function(){
+  this.isInTrouble = true;
+  return 'Help me Obi-wan Kenobi, you\'re my only hope';
+};
+
+PrincessLeia.prototype.marries = function (lover){
+  if(lover === 'Han Solo'){
+    return true;
+  }else{
+    if( lover === 'Luke Skywalker'){
+      return 'Gross!';
+    }
+    return false;
+  }
+};
+
 
 /* Step 34
  *
