@@ -1116,7 +1116,6 @@ function Meal(foods){
  * Steps 60-80 (each variable is a 'step')
  */
 
-
 // Create 2 different species of animals
 var george = new Animal('Monkey', 'male');
 
@@ -1182,6 +1181,16 @@ var dinner = new Meal('fish and vegetables');
  *
  */
 
+ Animal.prototype.isWarmBlooded = function(){
+  if(this.species === 'Monkey' || this.species === 'Bird'){
+    return  true;
+  } else if(this.species === 'Fish'){
+    return false;
+  } else {
+    return "Could not determine if warm-blooded";
+  }
+
+ };
 
 /* Step 82
  *
